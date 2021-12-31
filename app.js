@@ -4,15 +4,22 @@ const port = 3000
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
-    res.send('Server is runing');
-})
 
-app.post('/', (req, res) => {
-    console.log (req.body);
-    res.send('Got a Post request Thx');
+//CHECKING IF SERVER IS RUNING BY GET REQUEST AND BY NODE CMD//
+app.get('/', (req, res) => {
+    res.send('Server is live');
 })
 
 app.listen(port, () => {
     console.log(`App is listening at localhost:${port}`);
 })
+
+//GETING DATA FROM JSON FILE//
+app.post('/', (req, res) => {
+    const invoiceData = req.body
+    console.log(invoiceData)
+
+
+    res.send(`Got a Post request Thank you`);
+})
+

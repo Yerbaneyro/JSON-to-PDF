@@ -9,6 +9,7 @@
   "author": "Marcin Bednarz",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.2"
+    "express": "^4.17.2",
+    "pdfkit": "^0.13.0"
   }
 }
